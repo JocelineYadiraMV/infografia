@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+   /*  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000; */
+    z-index: -2;
+}
+
+h1{
+    font-size: 2em;
+    color: #053367;
+    margin-left: 0;
+    
+}
+
+button{
+    border: none;
+}
+
+/* CONTAINER */
+.container{
+    background-color: #F1F1F1;
+    padding: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.container > header > h1{
+    text-align: start;
+    margin-left: 10px ;
+    margin-bottom: 20px;
+}
+
+/* PRIMER CONTENIDO */
+.container > .primerContenido{
+    text-align: justify;
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.container > .primerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container > .primerContenido > .row > .col-md > .parrafo1{
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background-color: #F1F1F1;
+}
+
+.container > .primerContenido > .row > .col-md > .tituloCirculos{
+    margin: auto 10px 20px 10px;
+}
+
+.circulo{
+    width: 220px;
+    height: 220px;
+    border-radius:10000px;
+    position: relative;
+}
+
+.circuloRosa{
+    background: #E88ABF;
+    opacity: 0.85;
+}
+
+.circuloVerdeazulado{
+    background: #90D5D5;
+    opacity: 0.85;
+}
+
+.circuloAzul{
+    background: #75A1D9;
+    opacity: 0.85;
+}
+
+.circuloVerde{
+    background: #78D29A;
+    opacity: 0.85;
+}
+
+.innerTexto{
+    width: 60%;
+    font-size: 15px;
+}
+
+.container > .primerContenido > .row > .col-md > .circuloRosa > .innerTexto p{
+    margin-bottom: 0 !important;
+}
+
+.container > .primerContenido > .row > .col-md > .circuloAzul > .innerTexto p{
+    margin-bottom: 0 !important;
+}
+
+.innerBotonCirculo{
+    width: 28% !important; 
+}
+
+.rotacionRosa{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 20%;
+    margin: 20px auto 20px auto;
+}
+
+.rotacionVerdeAzulado{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 16%;
+    margin: 20px auto 20px auto;
+}
+
+.rotacionAzul{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    width: 20%;
+    margin: 20px auto 20px auto;
+}
+
+.rotacionVerde{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 15%;
+    margin: 20px auto 20px auto;
+}
+
+/* SEGUNDO CONTENIDO */
+.container > .segundoContenido p{
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+}
+
+/* TERCER CONTENIDO */
+.container > .tercerContenido{
+    text-align: start;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.container > .tercerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.botonRedondo{
+    border-radius:100%;
+    width: 40%;
+}
+
+.botonDespegable{
+    border-radius:10000px;
+}
+
+.semiCirculo{
+    width: 70px; 
+    height: 140px; 
+    background: #053367;
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    color: white;
+    font-size: 60px;
+    position: relative;
+}
+
+.borde{
+    border: solid;
+    border-radius: 20px;
+    border-color: #6A8398;
+    border-width: 2px;
+    border-left: 0;
+}
+
+/* CUARTO CONTENIDO */
+.container > .cuartoContenido{
+    text-align: justify;
+}
+
+.container > .cuartoContenido > .row > .col-md p{
+    border-radius: 20px;
+    background-color: #FFFF;
+    margin: 20px auto 20px auto;
+    padding: 10px 30px 10px 30px;
+}
+
+.redondear{
+    border-radius: 1000px;
+}
+
+.justificar{
+    text-align: justify;
+}
+
+/*FOOTER*/
+.container > .footer{
+    background-color: #FFFF;
+    position: relative;
+}
+
+.container > .footer::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 90%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* RESPONSIVE IPADS, PC Y TELEFONOS*/
+@media screen and (min-width: 768px) {
+    .container{
+        width: 800px !important;
+    }
+
+    .container > header > h1{
+        text-align: start;
+        margin-left: 20px ;
+        margin-top: 40px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .container > .cuartoContenido{
+        height: 240px;
+    }
+
+    .container > .cuartoContenido > .row > .col-md img{
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    .container > .cuartoContenido > .row > .col-md p{
+        width: 90%;
+        margin-right: 30px;
+    }
+
+    .container > .segundoContenido p{
+        padding: 10px 30px 10px 30px;
+    }
+
+    .semiCirculo{
+        width: 55px; 
+        height: 130px; 
+        background: #053367;
+        -moz-border-radius: 0 100px 100px 0;
+        -webkit-border-radius: 0 100px 100px 0;
+        border-radius: 0 100px 100px 0;
+        color: white;
+        font-size: 50px;
+        position: relative;
+    }
+
+    .cuadroP{
+        padding-right: 0 !important;
+    }
+
+    .botonRedondo{
+        width: 30px;
+    }
+
+    .container > .primerContenido {
+        position: relative;
+        top: -20px;
+    }
+
+    .container > .primerContenido > .row > .col-md > .parrafo1{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .container > .primerContenido > .row > .col-md > .tituloCirculos{
+        text-align: center;
+        width: 25%;
+        position: relative;
+        top: 200px;
+        left: 210px;
+        font-size: 25px;
+    }
+
+    .circuloRosa{
+        bottom: 130px;
+        left: 30px;
+    }
+    
+    .circuloVerdeazulado{
+        bottom: 160px;
+        right: 30px;
+    }
+
+    .circuloAzul{
+        left: 442px;
+        bottom: 60px;
+    }
+    
+    .circuloVerde{
+        bottom: 20px;
+        right: 300px;
+    }
+
+    .rotacionRosa{
+        -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+        width: 60%;
+        height: 100px !important;
+       position: relative;
+        bottom: 130px;
+        right: -5px;
+    }
+
+    .rotacionVerdeAzulado{
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        width: 50px !important;
+       height: 100px !important;
+        position: relative;
+        top: 40px;
+        right:  130px;
+    }
+
+    .rotacionAzul{
+        -webkit-transform: rotate(-25deg);
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+        width: 20%;
+        width: 58px !important;
+        height: 100px !important;
+        position: relative;
+        left: 50px;
+        top: 10px;
+    }
+    
+    .rotacionVerde{
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        width: 58px !important;
+        height: 100px !important;
+        position: relative;
+        right: 520px;
+        bottom: 150px;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .container > .cuartoContenido{
+        height: 270px;
+    }
+
+    .botonRedondo{
+        width: 37px;
+    }
+
+    .container > .primerContenido > .row > .col-md > .parrafo1{
+        width: 28%;
+        position: relative;
+        left: 70%;
+    }
+
+    .container > .primerContenido > .row > .col-md > .tituloCirculos{
+        text-align: center;
+        width: 25%;
+        position: relative;
+        top: -0.30px !important;
+        left: 200px;
+        font-size: 25px;
+    }
+
+    .circuloRosa{
+        bottom: 380px;
+        left: -5px;
+    }
+    
+    .circuloVerdeazulado{
+        bottom: 430px;
+        right: 90px;
+    }
+
+    .rotacionRosa{
+        -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+        width: 30%;
+       position: relative;
+        bottom: 380px;
+        left:  -45px;
+    }
+
+    .rotacionVerdeAzulado{
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        width: 50px !important;
+       height: 100px !important;
+        position: relative;
+        top: -200px;
+        right:  200px;
+    }
+
+    .circuloAzul{
+        left: 442px;
+        bottom: 280px;
+    }
+    
+    .circuloVerde{
+        bottom: 200px;
+        right: 350px;
+    }
+
+    .rotacionAzul{
+        -webkit-transform: rotate(-25deg);
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+        width: 20%;
+        width: 58px !important;
+        height: 100px !important;
+        position: relative;
+        left: 50px;
+        top: -200px;
+    }
+    
+    .rotacionVerde{
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        width: 58px !important;
+        height: 100px !important;
+        position: relative;
+        right: 590px;
+        bottom: 370px;
+    }
+
+    .container > .primerContenido{
+        height: 740px;
+    }
+
+}

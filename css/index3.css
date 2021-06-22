@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    /* background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000;
+    font-family: Raleway-Thin, sans-serif; */
+    z-index: -2;
+}
+
+h1{
+    font-size: 2em;
+    color: #053367;
+    margin-left: 0;
+    
+}
+
+button{
+    border: none;
+}
+
+p{
+    text-align: justify;
+}
+
+
+/* CONTAINER */
+.container{
+    background-color: #F1F1F1;
+    padding: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.container > header > h1{
+    text-align: start;
+    margin-left: 10px ;
+    margin-bottom: 20px;
+}
+
+/* PRIMER CONTENIDO */
+.container > .primerContenido{
+    background-color: #FFFF;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    height: 370px;
+}
+
+.container > .primerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container > .primerContenido > .todo > .row > .col-md img{
+    width: 80%;
+}
+
+.container > .primerContenido > .todo > .boton1P{
+    position: relative;
+    top:60px
+}
+
+.container > .primerContenido > .todo > .boton2-3P{
+    position: relative;
+   top: 100px;
+}
+
+.container > .primerContenido > .todo > .boton4-5P{
+    position: relative;
+    bottom: 50px;
+}
+
+.botonRedondo {
+    border-radius:10000px;
+}
+
+.botonDespegable{
+    border-radius:10000px;
+    width: 40px;
+}
+
+.boton2{
+    position: relative;
+    left: -20px;
+}
+
+.boton3{
+    position: relative;
+   right: -20px;
+
+}
+
+.redondear{
+    border-radius: 1000px;
+}
+
+.fondo{
+    background-color: #87BECD;
+}
+
+.botonEjemplo{
+    position: relative;
+    left: 35%;
+}
+
+.todo{
+    position: relative;
+    bottom: 40px;
+}
+
+.pregunta1{
+    text-align: center;
+    position: relative;
+   bottom: 300px;
+   visibility: hidden;
+}
+
+.pregunta2{
+    text-align: center;
+    position: relative;
+    bottom: 320px;
+    visibility: hidden;
+}
+
+.pregunta3{
+    text-align: center;
+    position: relative;
+    bottom: 340px;
+    visibility: hidden;
+}
+
+.pregunta4{
+    text-align: center;
+    position: relative;
+    bottom: 360px;
+    visibility: hidden;
+}
+
+.pregunta5{
+    text-align: center;
+    position: relative;
+    bottom: 380px;
+    visibility: hidden;
+}
+
+.redondearImg{
+    border: solid;
+    border-radius: 6000px; 
+    width: 200px;
+    height: 200px;
+    border-color: #F1F1F1;
+}
+
+/* SEGUNDO CONTENIDO */
+.container > .segundoContenido{
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container > .segundoContenido > .row > .col-md > .carrusel > #firstCarousel > #cuadroCarrusel{
+    background: white;
+    border-radius: 20px;
+}
+
+.container > .segundoContenido > .row > .col-md > .carrusel > #firstCarousel > #cuadroCarrusel > .carousel-inner{
+    padding: 15px 60px 5px 60px;
+}
+
+/* TERCER CONTENIDO */
+.container > .tercerContenido{
+    background-color: #FFFF;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.container > .tercerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container > .tercerContenido h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.container > .tercerContenido p {
+    border-radius: 20px;
+    background: #F1F1F1;
+    padding: 15px 20px 15px 20px;
+} 
+
+.container > .tercerContenido > .row > .col-md img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+/* CUARTO CONTENIDO */
+.container > .cuartoContenido p{    
+    margin-top: 8px; /*Cambios para en el margen*/
+    text-align: justify;
+    padding: 30px 25px 30px 25px;    
+}
+
+/*FOOTER*/
+.container > .footer{
+    background-color: #FFFF;
+    position: relative;
+}
+
+.container > .footer::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 85%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* RESPONSIVE IPADS, PC Y TELEFONOS*/
+@media screen and (min-width: 600px) {
+    .container{
+        width: 800px !important;
+         /* height: 1600px;  */
+    }
+
+    .container > header > h1{
+        text-align: start;
+        margin-left: 40px ;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        position: relative;
+       bottom: 80px;
+    }
+
+    .container > .primerContenido{
+        position: relative;
+        bottom: 80px;
+        height: 500px;
+    }
+
+    .container > .segundoContenido{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .carrusel > #firstCarousel {
+        height: 50%;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .carrusel > #firstCarousel > #cuadroCarrusel{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .container > .segundoContenido > .carrusel > #firstCarousel > #cuadroCarrusel > .carousel-inner{
+        padding: 15px 80px 5px 80px;
+    }
+
+    .container > .tercerContenido{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .tercerContenido h1 {
+        width: 70%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+    }
+
+    .container > .tercerContenido p {
+        width: 50%;
+    } 
+
+    .container > .tercerContenido > .row > .col-md img{
+        width: 100%;
+        
+    }
+
+    .container > .tercerContenido > .row > .col-md  > .minimo1{
+        width: 40%;  
+        position: relative;
+        left: 80px;
+    }
+
+    .container > .tercerContenido > .row > .col-md  > .minimo2{
+        width: 40%;  
+        position: relative;
+        right: 80px;
+    }
+
+    .container > .cuartoContenido {
+        background: #f1f1f1;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .cuartoContenido p{
+        text-align: justify;
+        padding: 30px 50px 30px 50px;
+    }
+
+    .container > .primerContenido > .todo > .row > .col-md img{
+        width: 50%;
+    }
+
+    .container > .primerContenido > .todo > .botones > .botonRedondo {
+        width: 5%;
+    }
+
+    .container > .footer{
+        position: relative;
+    }
+
+   .boton2{
+        position: relative;
+        left: 15px;
+    }
+    
+    .boton3{
+        position: relative;
+       right: 15px;
+
+    }
+
+    .boton4 {
+        position: relative;
+        left: 60px;
+    }
+    
+    .boton5 {
+        position: relative;
+        right: 60px;
+    }
+
+    .todo{
+        position: relative;
+        top: 30px;
+    }
+
+    .pregunta1{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 400px;
+        left: 225px;
+        visibility: visible;
+    }
+    
+    .pregunta2{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 450px;
+        left: 50px;
+        visibility: visible;
+    }
+    
+    .pregunta3{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 540px;
+        left: 380px;
+        visibility: visible;
+    }
+    
+    .pregunta4{
+        text-align: center;
+        width: 30% !important;
+        position: relative;
+        bottom: 325px;
+        left: 50px;
+        visibility: visible;
+    }
+    
+    .pregunta5{
+        text-align: center;
+        width: 30% !important;
+        position: relative;
+        bottom: 420px;
+        left: 340px;
+        visibility: visible;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .primerContenido{
+        height: 590px !important;
+    }
+    
+   .boton2{
+        position: relative;
+        left: 50px;
+    }
+
+    .boton3{
+        position: relative;
+        right: 50px;
+    }
+
+    .boton4 {
+        position: relative;
+        left: 60px;
+        bottom: 30px;
+    }
+    
+    .boton5 {
+        position: relative;
+        right: 60px;
+        bottom: 30px;
+    }
+
+    .todo{
+        position: relative;
+        top: 30px;
+    }
+
+    .pregunta1{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 470px;
+        left: 285px;
+        visibility: visible;
+    }
+    
+    .pregunta2{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 500px;
+        left: 80px;
+        visibility: visible;
+    }
+    
+    .pregunta3{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 590px;
+        left: 500px;
+        visibility: visible;
+    }
+    
+    .pregunta4{
+        text-align: center;
+        width: 25% !important;
+        position: relative;
+        bottom: 350px;
+        left: 30px;
+        visibility: visible;
+    }
+    
+    .pregunta5{
+        text-align: center;
+        width: 25% !important;
+        position: relative;
+        bottom: 435px;
+        left: 500px;
+        visibility: visible;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .todo{
+        position: relative;
+        top: 10px;
+    }
+
+    .pregunta1{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 490px;
+        left: 325px;
+    }
+    
+    .pregunta2{
+        text-align: center;
+        width: 25% !important;
+        position: relative;
+        bottom: 500px;
+        left: 60px;
+    }
+    
+    .pregunta3{
+        text-align: center;
+        width: 20% !important;
+        position: relative;
+        bottom: 570px;
+        left: 550px;
+    }
+    
+    .pregunta4{
+        text-align: center;
+        width: 25% !important;
+        position: relative;
+        bottom: 300px;
+        left: 30px;
+    }
+    
+    .pregunta5{
+        text-align: center;
+        width: 25% !important;
+        position: relative;
+        bottom: 390px;
+        left: 580px;
+    }
+}
+
+@media screen and (min-width: 362px) {
+    .container > .primerContenido{
+        height: 470px;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .container > .primerContenido{
+        height: 570px;
+    }
+}

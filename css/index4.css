@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* body {
+    background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000;
+    font-family: sans-serif;
+} */
+
+h1{
+    font-size: 2em;
+    color: #053367;
+    margin-left: 0;
+}
+
+button{
+    border: none;
+    border-radius: 15px;
+}
+
+/* CONTAINER */
+.container{
+    background-color: #F1F1F1;
+    padding: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.container > header > h1{
+    text-align: start;
+    margin-left: 10px ;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* PRIMER CONTENIDO */
+.container > .primerContenido{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #FFFF;
+    position: relative;
+    text-align: justify;
+}
+
+.container > .primerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container > .primerContenido > .cajaInfo{
+   border-radius: 15px;
+   background-color: #F1F1F1;
+   padding: 20px 30px 10px 30px;
+}
+
+/* SEGUNDO CONTENIDO */
+.container > .segundoContenido > .row > .col-md-8 > #titulo2{
+    text-align: start;
+    margin-left: 10px ;
+    margin-bottom: 20px;
+}
+
+.container > .segundoContenido > .row > .col-md > .circulo{
+    width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.container > .segundoContenido > .row > .col-md > .circulo p{
+	font-size: 1.3rem;
+    width: 78%;
+}
+
+.container > .segundoContenido > .row > .col-md > .circuloRosa{
+    background: #E88ABF;
+    opacity: 0.85;
+}
+
+.container > .segundoContenido > .row > .col-md > .circuloAzul{
+    background: #75A1D9;
+    opacity: 0.85;
+}
+
+.container > .segundoContenido > .row > .col-md > .moveCR{
+    position: relative;
+    top: -40px;
+}
+
+.container > .segundoContenido > .row > .col-md > .moveCA{
+    position: relative;
+    top: -20px;
+}
+
+.container > .segundoContenido > .row > .col-md > .moveCR2{
+    position: relative;
+    top: -80px;
+}
+
+.container > .segundoContenido > .row > .col-md > .moveCA2{
+    position: relative;
+    top: -60px;
+}
+
+
+/* TERCER CONTENIDO */
+.container > .tercerContenido{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #FFFF;
+    position: relative;
+    text-align: justify;
+}
+
+.container > .tercerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container > .tercerContenido > .row > .col-md-6 > .cajaInfo2{
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    padding: 20px 20px 10px 5px;
+    margin-bottom: 10px;
+}
+
+.container > .tercerContenido > .row > .col-md-6 > .subcontenedor3 > .cajaInfo3{
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    padding: 20px 20px 10px 5px;
+    margin-bottom: 20px;
+}
+
+/*FOOTER*/
+.container > .footer{
+    background-color: #FFFF;
+}
+
+/* RESPONSIVE IPADS Y PC*/
+@media screen and (min-width: 770px) {
+    .container{
+        width: 800px !important;
+        height: 1600px;
+    }
+
+    .container > header > h1{
+        text-align: start;
+        margin-left: 40px ;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .primerContenido{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .primerContenido > .cajaInfo{
+        margin: auto 30px auto 30px;
+     }
+
+    .container > .primerContenido > .row > .col-md-6 > #reducirParrafo p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container > .segundoContenido{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .container > .segundoContenido > .row {
+        margin-left: 10px ;
+        margin-right: 10px;
+    }
+
+    .container > .segundoContenido > .row > .col-md-8 > #titulo2{
+        font-size: 2em;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .circulo{
+        width: 14rem;
+        height: 14rem;
+    }
+    
+    .container > .segundoContenido > .row > .col-md > .circulo p{
+        font-size: 0.9rem;
+        width: 78%;
+    }
+  
+    .container > .segundoContenido > .row > .col-md > .moveCRM{
+        position: relative;
+        left: -30px;
+    }
+    
+    .container > .segundoContenido > .row > .col-md > .moveCA{
+        position: relative;
+        left: -180px;
+        top: -1px;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .moveCR{
+        position: relative;
+        left: 370px;
+        top: -221px;
+    }
+    
+    
+    .container > .segundoContenido > .row > .col-md > .moveCA2{
+        position: relative;
+        right: 280px;
+        top: -40px;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .moveCR2M{
+        position: relative;
+        left: 100px;
+        top: -270px;
+    }
+
+    .container > .tercerContenido{
+        position: relative;
+        bottom: 300px;
+    }
+
+    .container > .tercerContenido > .row > .col-md-6  > .cajaInfo2{
+        margin-left: 20px;
+    }
+
+    .container > .tercerContenido > .row > .col-md-6 > .subcontenedor3 > .cajaInfo3{
+        margin-right: 20px;
+    }
+
+    .container > .tercerContenido > .row > .col-md-6 > .subcontenedor3 > .lectura{
+        margin-right: 20px;
+    }
+
+    .container > .tercerContenido h5{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .container > .footer{
+        position: relative;
+        bottom: 220px;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 992px){
+    .container > .segundoContenido > .row > .col-md > .circulo{
+        width: 11rem;
+        height: 11rem;
+    }
+    
+    .container > .segundoContenido > .row > .col-md > .circulo p{
+        font-size: 0.7rem;
+        width: 74%;
+    }
+  
+    .container > .segundoContenido > .row > .col-md > .moveCRM{
+        position: relative;
+        left: -45px;
+    }
+    
+    .container > .segundoContenido > .row > .col-md > .moveCA{
+        position: relative;
+        left: -150px;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .moveCR{
+        position: relative;
+        left: -260px;
+        top: 1px;
+    }
+    
+    
+    .container > .segundoContenido > .row > .col-md > .moveCA2{
+        position: relative;
+        left: 350px;
+        top: -175px;
+    }
+
+    .container > .segundoContenido > .row > .col-md > .moveCR2M{
+        position: relative;
+        top: -175px;
+        left: 110px;
+    }
+
+    .container > .tercerContenido{
+        position: relative;
+        bottom: 220px;
+     }
+
+     .container > .footer {
+        position: relative;
+        bottom: 200px;
+    }
+}
+
+/* RESPONSIVE TELEFONOS*/
+@media screen and (max-width: 360px){
+    .container > .primerContenido > .row > .minimo{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+

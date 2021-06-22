@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+   /*  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000; */
+    z-index: -2;
+}
+
+h1{
+    font-size: 2em;
+    color: #053367;
+    margin-left: 0;   
+}
+
+h2{
+    color: #053367;;
+}
+
+button{
+    border: none;
+    border-radius:10000px;
+}
+
+ul{
+    margin: 0 !important;
+    text-align: justify;
+}
+
+p{
+    text-align: justify;
+}
+
+/* CONTAINER */
+.container{
+    background-color: #F1F1F1;
+    padding: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.container > header > h1, h5{
+    text-align: start;
+    margin-left: 10px ;
+    margin-bottom: 20px;
+}
+
+/* PRIMER CONTENIDO */
+.container > .primerContenido{
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+
+.container > .primerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.tituloInnovacion{
+    padding-top: 10px;
+    position: relative;
+    left: 10%;
+}
+
+#firstCarousel{
+    border-radius: 1.25em;
+    background-color: #F1F1F1;
+}
+
+.carousel-inner{
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.parrafoCarousel{
+    margin: 0 !important;
+}
+
+/* SEGUNDO CONTENIDO */
+.container > .segundoContenido{
+   margin-bottom: 20px;
+   text-align: justify;
+}
+
+.container > .segundoContenido h2{
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+
+.seundoTexto{
+    margin: auto 20px auto 20px;
+}
+
+/* TERCER CONTENEDOR */
+.tercerContenido{
+    background-color: white;
+    position: relative;
+    display: flex;   
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.tercerContenido::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.circulo{
+    width: 270px;
+    height: 270px;
+    border-radius:10000px;
+}
+
+#circuloRosa{
+    background: #E88ABF;
+    opacity: 0.85;
+    position: relative;
+
+}
+
+#circuloAzul{
+    background: #75A1D9;
+    opacity: 0.85;
+    position: relative;
+}
+
+#circuloLila{
+    background: #BA86D9;
+    opacity: 0.85;
+    position: relative;
+  
+}
+
+.botonDespegable{
+    border-radius:10000px;
+}
+
+.redondear{
+    border-radius: 1000px;
+}
+
+
+/*FOOTER*/
+.container > .footer{
+    background-color: #FFFF;
+    position: relative;
+}
+
+.container > .footer::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-image: linear-gradient(to right, #ddd, #333, #ddd);
+    width: 100%;
+    height: 90%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* CUARTO CONTENIDO */
+.container > .cuartoContenido{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   text-align: justify;
+}
+
+.container > .cuartoContenido h2{
+    text-align: center;
+}
+
+#secondCarousel{
+    border-radius: 20px;
+    background-color: white;
+}
+
+.carousel-inner{
+    width: 80% !important;
+    position: relative;
+    left: 10%;
+}
+
+/* RESPONSIVE IPADS, PC Y TELEFONOS*/
+@media screen and (min-width: 768px) {
+    .container{
+        width: 800px !important;
+    }
+
+    .container > header > h1, h5{
+        text-align: start;
+        margin-left: 20px ;
+        margin-top: 40px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .carousel-inner{
+        padding: 20px 10px 0 10px;
+    }
+
+    #firstCarousel{
+        width: 90% !important;
+    }
+
+    .container > .cuartoContenido h2{
+        width: 80%;
+        text-align: center;
+        position: relative;
+        left: 10%;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .caracteristicas{
+       position: relative;
+       left: -50px;
+    }
+
+    .retos{
+        position: relative;
+        right: 220px;
+    }
+
+    .esquema{
+        position: relative;
+        left: 230px;
+        bottom: 310px;
+    }
+    
+    #circuloRosa{
+        background: #E88ABF;
+        opacity: 0.85;
+        position: relative;
+        left: -20px;
+    }
+    
+    #circuloAzul{
+        background: #75A1D9;
+        opacity: 0.85;
+        position: relative;
+        right: 220px;
+    }
+    
+    #circuloLila{
+        background: #BA86D9;
+        opacity: 0.85;
+        position: relative;
+       left: 200px;
+       bottom: 310px;
+    }
+
+    .tercerContenido{
+       height: 360px;
+    }
+
+    .modal-tittle{
+        position: relative;
+        top: 0px !important;
+        bottom: 0px !important;
+    }
+}

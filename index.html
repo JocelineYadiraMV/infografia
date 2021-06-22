@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lección 1. UVEG</title>
+    <!-- CSS personalizado-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Agregando recursos de Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    
+    <div class="container"> <!-- container principal -->
+        <header>
+            <img class="img-fluid" src="imagenes/logo.png" alt="Logo UVEG" >
+            <h1><strong>Modelos de gestión tecnológica e innovación</strong></h1>
+            <h5>En esta Lección revisaremos el tema de la gestión tecnológica
+                y proceso de innovación.</h5>
+        </header>
+
+        <!-- primer contenido -->
+        <div class="primerContenido">
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="carrusel"> 
+                        <div id="firstCarousel" class="carousel slide carousel-dark container mt-3 " data-ride="carousel">
+                            <div id="cuadroCarrusel "> <!-- darle color al fonde del carousel -->
+                                <div class="carousel-inner mt-2 "> <!-- son los items dentro del carrusel -->
+                                    <div class="carousel-item active" >
+                                        <p class="parrafoCarousel">
+                                            Una innovación tecnológica es:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                La introducción en el mercado de nuevos productos o servicios, los cuales están respaldados por procesos de producción novedosos, con características mejoradas de desempeño y con el uso intensivo de la tecnología. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p>
+                                            Sin duda, el término innovación es uno de los más utilizados en todos los ámbitos laborales; sin embargo, si preguntas a varias personas, cada una tendrá una definición distinta. Vamos a clarificar el verdadero significado del término. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- son los 2 botones de cada lado en forma de flecha -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#firstCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#firstCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- fin carousel -->
+                </div>
+
+                <div class="col-md d-flex align-items-center">
+                    <img class="img-fluid" src="imagenes/pag1_img1.png" alt="¿Qué es la innovación?"/>
+                </div>
+            </div>
+
+        </div> <!-- fin primer contenido-->
+
+        <div class="segundoContenido">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="imagenes/pag1_img2.png" alt="¿Qué distingue a las empresas innovadoras?" />
+                </div>
+
+                <div class="col-md-7">
+                    <div class="seundoTexto">
+                        <h2><strong>¿Qué distingue a las empresas innovadoras?</strong></h2>
+                        <p>
+                            Si la innovación implica la obtención de ganancias económicas
+                            derivadas de productos o servicios novedosos, identificarás que la
+                            actividad de innovar está más presente de lo que pensabas en el
+                            sector empresarial. Vamos a conocer a continuación qué distingue a
+                            una empresa innovadora:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fin segundo contenido-->
+
+        <!-- circulos-->
+        <div class="tercerContenido">
+            <div class="row">
+                <!-- CIRCULO ROSA -->
+                <div class="col-md d-flex justify-content-center">
+                    <div class="text-center">
+                        <h2 class="caracteristicas">Características</h2>
+                        <div id="circuloRosa" class="circulo d-flex justify-content-center align-items-center">
+                            <button id="positionBotonRosa" type="button" class="btn btn-default p-0 botonRedondo" data-bs-toggle="modal" data-bs-target="#caracteristicas">
+                                <img class="botonDespegable" src="imagenes/botonDespegable.png" alt="Abrir" width="80" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CIRCULO AZUL -->
+                <div class="col-md d-flex justify-content-center">
+                    <div class="text-center">
+                        <h2 class="retos">Retos</h2>
+                        <div id="circuloAzul" class="circulo d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-default p-0 botonRedondo" data-bs-toggle="modal" data-bs-target="#retos">
+                                <img class="botonDespegable" src="imagenes/botonDespegable.png" alt="Abrir" width="80" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CIRCULO LILA -->
+                <div class="col-md d-flex justify-content-center">
+                    <div class="text-center">
+                        <h2 class="esquema">Esquema innovador</h2>
+                        <div id="circuloLila" class="circulo d-flex justify-content-center align-items-center">
+                            <button id="positionBotonLila" type="button" class="btn btn-default p-0 botonRedondo" data-bs-toggle="modal" data-bs-target="#esquemaInnovador">
+                                <img class="botonDespegable" src="imagenes/botonDespegable.png" alt="Abrir" width="80" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fin tercer contenido-->
+
+        <div class="cuartoContenido">
+            <div class="row">
+                <div class="col-md">
+                    <h2>¿Cuál es la principal característica
+                        de la innovación?</h2>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md ">
+                    <div class="carrusel"> 
+                        <div id="secondCarousel" class="carousel slide carousel-dark container mt-3 " data-ride="carousel">
+                            <div id="cuadroCarrusel "> <!-- darle color al fonde del carousel -->
+                                <div class="carousel-inner mt-2 "> <!-- son los items dentro del carrusel -->
+                                    <div class="carousel-item active" >
+                                        <p >
+                                            Cuando visites un supermercado, observa cómo cada cadena hace un uso distinto de
+                                            la tecnología en el proceso de cobranza. Algunas cuentan con cajas de autoservicio,
+                                            otras hacen un rastreo de los hábitos de sus clientes con tarjetas de fidelidad y otros
+                                            reflejan su buen manejo de inventario en la velocidad de cobro.
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p>
+                                            El reconocimiento de las oportunidades estratégicas y utilizar a la tecnología para construir nuevas estrategias corporativas (Organisation for Economic Co-operation and Development [OECD] & Statistical Office of the European Communities, 2007).
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- son los 2 botones de cada lado en forma de flecha -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#secondCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#secondCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- fin carousel -->
+                </div>
+            </div> <!-- fin de la fila -->
+
+        </div> <!-- fin cuarto contenido-->
+
+        <!-- botón para desplazar a sig pag -->
+        <footer class="footer">
+            <div class="subFooter d-flex justify-content-center">
+                <button id="botonSigPag" type="button">
+                    <img src="imagenes/botonFooter.png" alt="Botón siguiente pag" width="60" height="60">
+                </button>
+            </div> <!-- fin sub footer -->
+        </footer> <!-- fin footer -->
+    </div> <!-- fin container principal -->
+
+    <!-- VENTANA DESPEGABLE CIRCULO ROSA -->
+    <div class="modal fade" id="caracteristicas" tabindex="-1" >
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" style="top: 0px; bottom: 0px;">Características</h5>
+                    <button type="button" class="btn rounded-circle m-0 p-0" data-bs-dismiss="modal">
+                        <img class="redondear" src="imagenes/cerrar.png" alt="Cerrar" width="30" />
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Su principal característica es que emplean la tecnología como parte de su estrategia para evolucionar y proponer nuevos productos, servicios o procesos de producción.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+    
+    <!-- VENTANA DESPEGABLE CIRCULO AZUL -->
+    <div class="modal fade" id="retos" tabindex="-1" >
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" style="top: 0px; bottom: 0px;">Retos</h5>
+                    <button type="button" class="btn rounded-circle m-0 p-0" data-bs-dismiss="modal">
+                        <img class="redondear" src="imagenes/cerrar.png" alt="Cerrar" width="30" />
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        El reto para las empresas innovadoras es contar con sistemas o procesos de gestión tecnológica claros, sistematizados, eficaces y dominados por su personal (Burgelman, Christensen, & Wheelwright, 2008; Kline, 1985; Myers, & Marquis, 1969; Organisation for Economic Co-operation and Development [OECD], Statistical Office of the European Communities, & European Union, 1997; Teece, 1986).
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+
+    <!-- VENTANA DESPEGABLE CIRCULO LILA -->
+    <div class="modal fade" id="esquemaInnovador" tabindex="-1" >
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" style="top: 0px; bottom: 0px;">Esquema innovador</h5>
+                    <button type="button" class="btn rounded-circle m-0 p-0" data-bs-dismiss="modal">
+                        <img class="redondear" src="imagenes/cerrar.png" alt="Cerrar" width="30" />
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                        <ol class="list-unstyled text-start ">
+                            <li>El ecosistema innovador incluye de igual manera:</li>
+                            <ul>
+                                <li>a quienes han desarrollado innovaciones,</li>
+                                <li>a quienes las han copiado y adaptado,</li>
+                                <li>a quienes han tenido éxito comercial,</li>
+                                <li>a quienes han fracasado</li>
+                                <li>y a quienes han ideado e implantado con éxito nuevos métodos de mercadotecnia y comercialización.</li>
+                            </ul>
+                        </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregando recursos de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {            
+
+            $('#botonSigPag').click(function(event) {
+                var url = window.location.href;
+
+                var ficheroActual = url.substring(url.lastIndexOf('/') + 1)
+
+                switch(ficheroActual){
+                    case 'index.html':
+                        urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'index2.html')
+                        window.location.replace(urlFinal);
+                        break;
+                    case 'index.html#':
+                        urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'index2.html')
+                        window.location.replace(urlFinal);
+                        break;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
